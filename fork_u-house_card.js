@@ -60,32 +60,32 @@ const TRANSLATIONS = {
         // --- AI NARRACJA ---
         
         // 1. ZAGROŻENIE
-        alert_storm: "⚠️ OSTRZEŻENIE KRYTYCZNE: W pobliżu wykryto burzę. Spodziewaj się wyładowań i silnego wiatru. Zabezpiecz przedmioty na zewnątrz i pozostań w domu.",
+        alert_storm: "⚠️ <b>OSTRZEŻENIE KRYTYCZNE</b>: W pobliżu wykryto burzę. Spodziewaj się wyładowań i silnego wiatru. Zabezpiecz przedmioty na zewnątrz i pozostań w domu.",
         
         // 2. ZDROWIE (SMOG / PYŁKI)
-        alert_aqi_bad: "😷 ALARM SMOGOWY: Jakość powietrza jest fatalna (PM2.5: {val}). Wyjście na zewnątrz grozi problemami oddechowymi. Zamknij okna i włącz oczyszczacz.",
-        alert_aqi_mod: "😶 OSTRZEŻENIE: Podwyższone stężenie pyłów (PM2.5: {val}). Jakość powietrza jest przeciętna. Osoby wrażliwe powinny unikać wysiłku na zewnątrz.",
-        alert_pollen: "🤧 ALARM DLA ALERGIKÓW: Wykryto bardzo wysokie stężenie pyłków. Przygotuj leki przeciwhistaminowe i unikaj wietrzenia sypialni.",
+        alert_aqi_bad: "😷 <b>ALARM SMOGOWY</b>: Jakość powietrza jest fatalna <span class='value-pill'>PM2.5: {val}</span>. Wyjście na zewnątrz grozi problemami oddechowymi. Zamknij okna i włącz oczyszczacz.",
+        alert_aqi_mod: "😶 <b>OSTRZEŻENIE</b>: Podwyższone stężenie pyłów <span class='value-pill'>PM2.5: {val}</span>. Jakość powietrza jest przeciętna. Osoby wrażliwe powinny unikać wysiłku na zewnątrz.",
+        alert_pollen: "🤧 <b>ALARM DLA ALERGIKÓW</b>: Wykryto bardzo wysokie stężenie pyłków. Przygotuj leki przeciwhistaminowe i unikaj wietrzenia sypialni.",
         
         // 3. PROGNOZA (NADCHODZĄCE)
-        advice_rain_soon: "☂️ PLANUJ Z WYPRZEDZENIEM: Nadciągają opady deszczu. Spodziewaj się ich ok. godziny {time} (prognozowane {val} mm). Weź parasol.",
-        advice_snow_soon: "❄️ OSTRZEŻENIE ZIMOWE: Ok. godziny {time} zacznie padać śnieg. Warunki drogowe mogą się gwałtownie pogorszyć. Zachowaj ostrożność.",
+        advice_rain_soon: "☂️ <b>WEŹ PARASOL</b>: Nadciągają opady deszczu. Spodziewaj się ich ok. godziny <span class='value-pill'>{time}</span>. Prognozowane <span class='value-pill'>{val} mm</span>",
+        advice_snow_soon: "❄️ <b>ZACHOWAJ OSTROŻNOŚĆ</b>: Ok. godziny <span class='value-pill'>{time}</span> zacznie padać śnieg. Warunki drogowe mogą się gwałtownie pogorszyć.",
         
         // 4. AKTUALNA POGODA
-        advice_rain_now: "🌧️ PADA DESZCZ: Aktualny opad to {val} mm. Jest mokro i ślisko. Jeśli musisz wyjść, koniecznie weź kurtkę przeciwdeszczową.",
-        advice_snow_now: "🌨️ PADA ŚNIEG: Na zewnątrz sypie śnieg. Jest malowniczo, ale pamiętaj o ciepłym ubraniu i czapce.",
+        advice_rain_now: "🌧️ <b>DESZCZ</b>: Aktualny opad to <span class='value-pill'>{val} mm</span>. Jest mokro i ślisko. Jeśli musisz wyjść, koniecznie weź kurtkę przeciwdeszczową.",
+        advice_snow_now: "🌨️ <b>ŚNIEG</b>: Na zewnątrz sypie śnieg. Jest malowniczo, ale pamiętaj o ciepłym ubraniu i czapce.",
         
         // 5. UV
-        alert_uv_high: "☀️ WYSOKIE PROMIENIOWANIE: Indeks UV wynosi {val}. Skóra może ulec poparzeniu. Koniecznie użyj kremu z filtrem i okularów przeciwsłonecznych.",
+        alert_uv_high: "☀️ <b>WYSOKIE PROMIENIOWANIE</b>: Indeks UV wynosi <span class='value-pill'>{val}</span>. Skóra może ulec poparzeniu. Koniecznie użyj kremu z filtrem i okularów przeciwsłonecznych.",
         
         // 6. TEMPERATURA + WIATR
-        advice_cold_wind: "🥶 CZYNNIK WIATRU: Jest {val}°C, ale silny wiatr sprawia, że temperatura odczuwalna jest znacznie niższa. Ubierz się „na cebulkę” i chroń uszy.",
-        advice_cold: "🧣 JEST ZIMNO: Temperatura wynosi {val}°C. Zalecam ciepłą kurtkę przed wyjściem. Warto też sprawdzić, czy okna są szczelne.",
+        advice_cold_wind: "🥶 <b>WIATR</b>: Jest <span class='value-pill'>{val} °C</span>, ale silny wiatr sprawia, że temperatura odczuwalna jest znacznie niższa. Ubierz się „na cebulkę” i chroń uszy.",
+        advice_cold: "🧣 <b>ZIMNO</b>: Temperatura wynosi <span class='value-pill'>{val} °C</span>. Zalecam ciepłą kurtkę przed wyjściem. Warto też sprawdzić, czy okna są szczelne.",
         
-        advice_hot: "🔥 FALA CIEPŁA: Temperatura osiągnęła {val}°C. Unikaj słońca w godzinach szczytu, pij dużo wody i zasłoń rolety, aby nie nagrzewać domu.",
-        advice_nice: "😎 DOBRE WARUNKI: Pogoda jest stabilna, temperatura przyjemna ({val}°C). To idealny moment na spacer lub przewietrzenie mieszkania.",
+        advice_hot: "🔥 <b>GORĄC</b>: Temperatura osiągnęła <span class='value-pill'>{val} °C</span>. Unikaj słońca w godzinach szczytu, pij dużo wody i zasłoń rolety, aby nie nagrzewać domu.",
+        advice_nice: "😎 Pogoda jest stabilna, temperatura przyjemna <span class='value-pill'>{val} °C</span>. To idealny moment na spacer lub przewietrzenie mieszkania.",
         
-        advice_gaming: "🎮 GAMING MODE: Tryb immersyjny aktywny. Powiadomienia wyciszone.",
+        advice_gaming: "🎮 <b>TRYB KINOWY/GRY</b>: Tryb immersyjny aktywny. Sterowanie AmbiLight włączone.",
     }
 };
 
@@ -529,7 +529,8 @@ class ForkUHouseCard extends HTMLElement {
           }
           .footer[data-status="warn"] { background: rgba(80, 50, 10, 0.65); border-top-color: var(--color-warm); }
           .footer[data-status="danger"] { background: rgba(80, 20, 20, 0.65); border-top-color: var(--color-hot); }
-          
+
+          .value-pill { background: rgba(255,255,255,0.1); padding: 4px 8px; border-radius: 6px; color: #ddd; white-space: nowrap;}
           .median-pill { background: rgba(255,255,255,0.1); padding: 4px 8px; border-radius: 6px; font-size: 0.8rem; color: #ddd; white-space: nowrap; flex-shrink: 0; align-self: flex-start; margin-top: 2px;}
           .median-pill b { color: #fff; }
           
