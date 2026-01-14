@@ -459,7 +459,7 @@ class ForkUHouseCard extends HTMLElement {
           .card {
               position: relative; display: flex; flex-direction: column; width: 100%; height: 350px;
               overflow: hidden;
-              text-shadow: var(--primary-background-color) 0 1px 0px;
+              text-shadow: rgba(0,0,0,0.8) 0 1px 0px;
               box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
               /* Please style borders and box shadow manually */
               /*
@@ -516,7 +516,6 @@ class ForkUHouseCard extends HTMLElement {
               border-radius: 16px;
               background: rgba(20, 20, 20, 0.8);
               backdrop-filter: blur(8px);
-              box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.6), inset -1px -1px 2px rgba(255, 255, 255, 0.03), 0 4px 8px rgba(0, 0, 0, 0.3);
               border: 1px solid rgba(255, 255, 255, 0.05);
               border-top: 1px solid rgba(0, 0, 0, 0.3);
               border-bottom: 1px solid rgba(255, 255, 255, 0.08);
