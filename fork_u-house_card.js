@@ -512,13 +512,14 @@ class ForkUHouseCard extends HTMLElement {
           .badges-layer { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 5; pointer-events: none; }
           .badge {
               position: absolute; transform: translate(-50%, -50%);
-              background: rgba(20, 20, 20, 0.8); backdrop-filter: blur(8px);
               padding: 6px 12px;
               border-radius: 16px;
+              background: rgba(20, 20, 20, 0.8);
+              backdrop-filter: blur(8px);
+              box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.6), inset -1px -1px 2px rgba(255, 255, 255, 0.03), 0 4px 8px rgba(0, 0, 0, 0.3);
               border: 1px solid rgba(255, 255, 255, 0.05);
               border-top: 1px solid rgba(0, 0, 0, 0.3);
               border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-              box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), -2px -2px 4px rgba(255, 255, 255, 0.03), inset 1px 1px 2px rgba(255, 255, 255, 0.05);
               display: flex; align-items: center; gap: 8px; pointer-events: auto;
           }
           .badge-dot { width: 8px; height: 8px; border-radius: 50%; }
@@ -543,7 +544,7 @@ class ForkUHouseCard extends HTMLElement {
           .value-pill { 
               background: rgba(20, 20, 20, 0.8);
               backdrop-filter: blur(8px);
-              box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.6), inset -1px -1px 2px rgba(255, 255, 255, 0.03), 0 4px 8px rgba(0, 0, 0, 0.3);
+              box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), -2px -2px 4px rgba(255, 255, 255, 0.03), inset 1px 1px 2px rgba(255, 255, 255, 0.05);
               border: 1px solid rgba(255, 255, 255, 0.05);
               border-top: 1px solid rgba(0, 0, 0, 0.3);
               border-bottom: 1px solid rgba(255, 255, 255, 0.08);
