@@ -170,7 +170,7 @@ class ForkUHouseCard extends HTMLElement {
 
      // --- NOWA LOGIKA WYBORU OBRAZKA ---
     _calculateImage() {
-        const path = this._config.image_path || "/local/community/fork-u-house-card/images/";
+        const path = this._config.image_path || "/local/community/fork_u-house_card/images/";
         
         // 1. Pora Dnia
         const sunState = this._hass.states[this._config.sun_entity || 'sun.sun']?.state || 'above_horizon';
