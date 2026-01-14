@@ -306,7 +306,7 @@ class ForkUHouseCard extends HTMLElement {
         const sunEnt = this._config.sun_entity || 'sun.sun';
         const isNight = this._hass.states[sunEnt]?.state === 'below_horizon';
         const dimLayer = this.shadowRoot.querySelector('.dim-layer');
-        if (dimLayer) dimLayer.style.opacity = isNight ? '0.5' : '0';
+        if (dimLayer) dimLayer.style.opacity = isNight ? '0.1' : '0';
         return isNight;
     }
 
