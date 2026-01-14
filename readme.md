@@ -2,6 +2,8 @@
 
 (I'm so lazy with codding so I asked Gemini to wrote this card :P Yeap)
 
+REQUIRED: Add season.season and sun.sun sensor before to home assistant!!!!
+
 ![msedge_bNu5APEUJq](https://github.com/user-attachments/assets/8405dc20-4e71-4588-a56a-044292b8ab87)
 
 An advanced, glassmorphism-styled Home Assistant Lovelace card designed for monitoring home climate, weather conditions, and environmental hazards.
@@ -103,13 +105,20 @@ Add the following to your Dashboard YAML configuration.
 type: custom:fork-u-house-card
 title: "My Residence" # Optional title (visual only)
 language: "en"        # Options: 'en', 'pl'
-image: /local/community/fork-u-house-card/my-house.png # Path to your house image
+
+img_winter_day_fog: true    # will look for winter_fog_day.png
+img_winter_night_fog: false # will not look for winter_night_fog.png and fallback to winter_day.png
+# remember to do the same for summer, winter, autumn, spring
+
+# also please note xmas starts 14 dec to 14 jan
+# remember to provide winter_xmas_day.png i winter_xmas_night.png 
 
 # use test to check animations effects:
 test_weather_state: fog # cloud, lightning, snowy, rainy, ...
 
-# --- Core Entities ---
+# --- Core Entities --- REQUIRED
 weather_entity: weather.forecast_home
+season_entity: sensor.season
 sun_entity: sun.sun
 cloud_coverage_entity: sensor.openweathermap_cloud_coverage # Optional (0-100%)
 
@@ -149,3 +158,4 @@ rooms:
     y: 10
 
     weight: 0
+
