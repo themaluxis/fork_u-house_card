@@ -551,6 +551,7 @@ class ForkUHouseCard extends HTMLElement {
           }
           pill-1 { 
               margin-left: -5px;
+              margin-right: 5px;
           }
           .value-pill b { color: #fff; }
           .median-pill {
@@ -575,7 +576,6 @@ class ForkUHouseCard extends HTMLElement {
           /* Allow multi-line text for verbose AI messages */
           .footer-content { 
               font-size: 0.85rem; color: #ccc; 
-              margin-top: -35px;
               white-space: normal; line-height: 1.8; 
               display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; 
               /*
