@@ -86,6 +86,46 @@ const TRANSLATIONS = {
         advice_nice: "😎 Pogoda jest stabilna, temperatura przyjemna <span class='value-pill'><b>{val}</b> °C</span>. To <span class='value-pill'>idealny</span> moment na spacer lub przewietrzenie mieszkania.",
         
         advice_gaming: "<span class='value-pill pill-1'>🎮 <b>TRYB IMERSYJNY</b></span>  Tryb kina lub gry aktywny. Sterowanie <span class='value-pill'><b>AmbiLight</b></span> włączone.",
+    },
+    fr: {
+        loading: "Analyse des données environnementales...",
+        home_median: "Maison",
+
+        // Conditions
+        clear_night: "Nuit claire", cloudy: "Nuageux", fog: "Brouillard", hail: "Grêle",
+        lightning: "Orage", lightning_rainy: "Orage et pluie",
+        partlycloudy: "Partiellement nuageux", pouring: "Pluie torrentielle", rainy: "Pluvieux",
+        snowy: "Neigeux", sunny: "Ensoleillé", windy: "Venteux",
+
+        // --- NARRATIONS IA ---
+
+        // 1. DANGER / ORAGE
+        alert_storm: "⚠️ ALERTE CRITIQUE : Un orage avec éclairs est actif à proximité. Des vents violents et de fortes pluies sont attendus. Sécurisez les objets à l'extérieur et restez à l'abri.",
+
+        // 2. SANTÉ (QAI / POLLEN)
+        alert_aqi_bad: "😷 ALERTE POLLUTION : La qualité de l'air est critique (PM2.5 : {val}). Une exposition prolongée est dangereuse. Gardez les fenêtres fermées et activez votre purificateur d'air.",
+        alert_aqi_mod: "😶 AVERTISSEMENT QUALITÉ DE L'AIR : Les niveaux de PM2.5 sont élevés ({val}). Les personnes sensibles devraient limiter les efforts physiques en extérieur aujourd'hui.",
+        alert_pollen: "🤧 ALERTE ALLERGIES : Concentration élevée de pollen détectée. Si vous souffrez d'allergies, gardez les fenêtres fermées et ayez vos médicaments à portée de main.",
+
+        // 3. PRÉVISIONS (PLUIE/NEIGE À VENIR)
+        advice_rain_soon: "☂️ ANTICIPEZ : La pluie approche, attendue vers {time} (environ {val} mm). Ne sortez pas sans parapluie.",
+        advice_snow_soon: "❄️ ALERTE HIVERNALE : Des chutes de neige sont prévues vers {time}. Les conditions routières pourraient se dégrader rapidement. Conduisez prudemment.",
+
+        // 4. MÉTÉO ACTUELLE
+        advice_rain_now: "🌧️ PLUIE EN COURS : Intensité de {val} mm/h. Surfaces mouillées et visibilité réduite. Conduisez prudemment et portez des vêtements imperméables.",
+        advice_snow_now: "🌨️ NEIGE : Il neige en ce moment. Profitez du paysage, mais couvrez-vous bien si vous sortez.",
+
+        // 5. UV / SOLEIL
+        alert_uv_high: "☀️ RAYONNEMENT UV ÉLEVÉ : L'indice UV est de {val}. La peau non protégée peut brûler rapidement. Utilisez de la crème solaire et portez des lunettes de soleil.",
+
+        // 6. TEMPÉRATURE + VENT (Refroidissement éolien)
+        advice_cold_wind: "🥶 ALERTE REFROIDISSEMENT ÉOLIEN : Il fait {val}°C, mais le vent fort donne une sensation bien plus froide. Portez des couches coupe-vent et un bonnet.",
+        advice_cold: "🧣 FROID : La température extérieure est de {val}°C. Il fait frais — pensez à bien fermer votre veste et à rester au chaud.",
+
+        advice_hot: "🔥 ALERTE CHALEUR : Les températures ont atteint {val}°C. Évitez les efforts intenses au soleil et buvez beaucoup d'eau.",
+        advice_nice: "😎 CONDITIONS AGRÉABLES : Météo stable à {val}°C avec un vent modéré. Idéal pour une promenade ou pour aérer la maison.",
+
+        advice_gaming: "🎮 MODE JEU : Éclairage immersif activé. Notifications désactivées.",
     }
 };
 
