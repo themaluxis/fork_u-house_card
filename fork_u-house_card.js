@@ -589,7 +589,7 @@ class ForkUHouseCard extends HTMLElement {
               white-space: nowrap;
               transition: all 0.2s ease;
           }
-          pill-1 { 
+          .pill-1 {
               margin-left: -5px;
               margin-right: 5px;
           }
@@ -635,7 +635,7 @@ class ForkUHouseCard extends HTMLElement {
           <canvas id="weatherCanvas"></canvas>
           <div class="badges-layer"></div>
           <div class="footer" data-status="normal">
-              <div class="median-pill">Dom: --</div>
+              <div class="median-pill">${this._t('home_median')}: --</div>
               <div class="footer-content">${this._t('loading')}</div>
           </div>
         </div>
@@ -691,7 +691,7 @@ class ForkUHouseCard extends HTMLElement {
       } else if (['snowy','snowy-rainy'].includes(wState)) {
           this._drawSnow(windDirX, moveSpeed);
       } 
-      if (['lightning','lightning-rainy'].includes(wState) || wState === 'lightning') this._handleLightning();
+      if (['lightning','lightning-rainy'].includes(wState)) this._handleLightning();
       
       if (this._flashOpacity > 0) {
           this._ctx.fillStyle = `rgba(255, 255, 255, ${this._flashOpacity})`;
@@ -809,4 +809,4 @@ class ForkUHouseCard extends HTMLElement {
   
   customElements.define('fork-u-house-card', ForkUHouseCard);
   window.customCards = window.customCards || [];
-  window.customCards.push({ type: "fork-u-house-card", name: "Fork U-House Card V11.0", description: "AI Storyteller Edition" });
+  window.customCards.push({ type: "fork-u-house-card", name: "Fork U-House Card V12.0", description: "AI Storyteller Edition" });
